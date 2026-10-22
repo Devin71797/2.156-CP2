@@ -12,17 +12,20 @@ Your task: submit 100 city grids that every advisor rates at least 0.75, while m
 - `assets/`: images used by the notebook and plotting functions.
 
 ## Python Requirements
-First create a new environment in conda/mamba:
+
+First, install [uv](https://docs.astral.sh/uv/getting-started/installation/) if you haven't already.
+
+Create a Python 3.10 virtual environment using uv:
 
 ```bash
-conda create --name CP2 python=3.10
+uv venv --python 3.10
 ```
 
-Then activate the environment and install packages using pip:
+Then activate the environment and install the required packages:
 
 ```bash
-conda activate CP2
-pip install -r requirements.txt
+source .venv/bin/activate
+uv pip install -r requirements.txt
 ```
 
 ## Submission
